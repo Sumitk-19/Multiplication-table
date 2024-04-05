@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Multiplication Table Generator</h2>
+        <div class="top">
+            <label for="">Multiplication Table of</label> <input type="number" name="" id="table">
+            <button id="arrow" onclick="generate()"><span style="font-size: 20px; font-weight: bold;">&rarr;</span></button>
+
+        </div>
+        <div id="result">
+
+        </div>
+    </div>
+    <script>
+        var result =document.getElementById('result');
+        var table =document.getElementById('table').value;
+
+        function generate(){
+            var result =document.getElementById('result');
+        var table =document.getElementById('table').value;
+           result.innerHTML='';
+        for(let i = 1; i < 11; i++) {
+            result.innerHTML+= table + "X" + i + "=" + table*i + "<br>";
+
+        }
+
+
+        }
+    </script>
+</body>
+</html>
